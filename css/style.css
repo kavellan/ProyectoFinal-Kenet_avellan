@@ -1,0 +1,367 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+    background: #f2f2f2;
+}
+
+.navbar{
+    background: #222349;
+    position: sticky;
+    top: 0;
+    font-size: 1.3rem;
+}
+
+.navbar a{
+    color: #FFF;
+    display: inline-block;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    color: rgb(253, 250, 250);
+    transition: .3s ease-out all;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.navbar a:hover{
+    background: #f0f3f5c6;
+    color: #000;
+    text-decoration: none;
+}
+.contenedor{
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-img{
+    height: 100%;
+    
+}
+
+.contenedor-img img{
+    width: 100%;
+    /*height: 70%;*/
+    background-position: center;
+    overflow: hidden;
+    vertical-align: top;
+    object-fit: cover;
+    object-position: 0 bottom;
+    
+
+}
+
+main{
+    min-height: 100vh;
+}
+
+main .contenido p{
+    margin-bottom: 20px;
+    line-height: 30px;
+    color: #000;
+    font-size: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main .contenido .titulo{
+    font-family: 'Monserrat', sans-serif;
+    font-weight: normal;
+    padding-top: 40px;
+}
+
+main .contenido H1{
+    color: #222349;
+}
+
+main .contenido .fecha{
+    font-size: 14px;
+    color: #b5b5b5;
+}
+
+aside{
+    min-width: 30%;
+    margin: 40px 20px 20px 0;
+    height: 100%;
+    background: #1d2f3d;
+    padding: 20px;
+    border-radius: 3px;
+    position: sticky; 
+    top: 20px;
+    
+}
+
+aside .titulo{
+    font-family: 'Monserrat', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #f2f2f2;
+}
+
+aside .indice a{
+    display: block;
+    margin-bottom: 10px;
+    color: #ffcd48;
+}
+
+.galeria-contenedor{
+    margin-top: 50px;
+    background-color: #525151;
+    text-align: center;
+    color: #ffcd48;
+}
+
+.galeria {
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.galeria-img{
+    position: relative;
+    overflow: hidden;
+    width: 28%;
+    margin-bottom: 30px;
+    box-shadow: 0 o 20px rgba(0, 0 , 0, 0.5);
+}
+
+.galeria-img img{
+    width: 100%;
+    height: 250px;
+    vertical-align: top;
+    object-fit: cover;
+    transform: scale(1);
+    transition: transform 3s;
+
+}
+
+.galeria-img:hover img {
+    transform: scale(1.3);
+}
+
+.galeria-img .extra-galeria{
+    position: absolute;
+    top: 0;
+    background: rgba(102, 104, 109, 0.5);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    transform: translate(100%,100%);
+    transition: transform 1s;
+}
+
+.galeria-img:hover .extra-galeria{
+    transform: translate(0);
+}
+
+.contenedor-precio {
+    background: rgba(145, 143, 143, 0.391);
+    text-align: center;
+    color: #222349;
+    padding: 60px 0;
+    margin-top: auto;
+    
+    
+}
+
+.contenedor-precio h3{
+    font-size: 1.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contenedor-precio .tabla-precios{
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+background-color: rgba(26, 35, 46, 0.782);
+height: 30%;
+
+}
+
+.contenedor-precio .tabla-precios .tabla{
+width: 30%;
+padding: 40px;
+border-radius: 10px;
+overflow: hidden;
+
+}
+
+.contenedor-precio .tabla-precios .tabla h5{
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: var(--m-b);
+    color: #ffcd48;
+} 
+
+.contenedor-precio .tabla-precios .tabla p{
+    font-size: 1.9rem;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: var(--m-b);
+    color: #ffcd48;
+}
+
+.contenedor-precio .tabla-precios .tabla ul{
+    list-style: none;
+}
+
+.contenedor-precio .tabla-precios .tabla ul li{
+    margin-bottom: var(--m-b);
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #fff;
+  
+}
+
+.contenedor-precio .tabla-precios .tabla a{
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    width: 200px;
+    margin: 0 auto;
+    text-decoration: none;
+    background: rgba(60, 59, 59, 0.775);
+    color: #fff;
+    border-radius: 9px;
+    
+}
+
+.contenedor-precio .tabla-precios .tabla a:hover{
+    background: #000;
+	color: #ffcd48;
+	text-decoration: none;
+    
+}
+
+.slider-contenedor{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+
+}
+
+
+
+.slider{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.cont-slider img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+    top: 0;
+    text-align: justify;
+    
+  
+}
+
+.cont-slider p{
+    color: #222349;
+    font-size: 1.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 60px 0;
+    
+}
+
+.contenedor-video{
+    padding: 60px;
+    text-align: left;
+}
+
+footer{
+    background: #fff;
+     background: -webkit-linear-gradient(to right, #171a3b, #1f285c);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #2c366d, #2e1b63); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     padding: 100px 0;
+     width: 100%;
+     margin: auto;
+     display: flex;
+     justify-content: space-around;
+     color: #ffcd48
+
+
+}
+
+footer .footer-contenedor{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+footer .footer-contenedor .contacto{
+    width: 50%;
+    color: #fff;
+   
+
+}
+
+footer .footer-contenedor .contacto h3{
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+footer .footer-contenedor .contacto p{
+    text-align: left;
+    margin-bottom: var(--m-b);
+    color: #fff;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+footer .footer-contenedor .contacto i{
+    font-size: 30px;
+    background: #fff;
+    color: #0082c8;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    box-shadow: 0 0 10px rgba(0, 0 , 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+    margin: 0 15px 0 0;
+}
+
+footer .footer-contenedor .logo{
+    width: 70%;
+    text-align: right;
+}
+
+footer .footer-contenedor .logo img{
+    width: 50%;
+    
+}
